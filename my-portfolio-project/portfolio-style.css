@@ -1,0 +1,109 @@
+body {
+  background-image: url("imgs/portfolio-background.jpg");
+  background-size: 100%;
+}
+
+.intro {
+  text-align: right;
+  font-family: cursive;
+}
+
+.about-me {
+  font-family: cursive;
+  font-size: 125%;
+}
+
+#books-cart {
+  display: block;
+  height: 12em;
+  width: 15em;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+#page-footer {
+  margin-top: 30%;
+}
+
+#my-resume, #memory-game {
+  display: block;
+  height: 12em;
+  width: 15em;
+  cursor: pointer;
+  margin-left: 3em;
+}
+
+#logo {
+  width: 80px;
+  float: left;
+  background: transparent;
+}
+
+@media only screen
+and (min-width: 360px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 3.0) {
+  * {
+    font-size: 15px;
+  }
+
+  #books-cart {
+    float: left;
+    display: block;
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+  }
+
+  #work-list {
+    margin-top: 10px;
+  }
+
+  #my-resume {
+    float: none;
+    margin-top: -4.5em;
+    margin-left: 7em;
+    display: block;
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+  }
+
+  #memory-game {
+    float: none;
+    margin-top: -6em;
+    margin-left: 15em;
+    display: block;
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+  }
+
+  a {
+    font-size: 12px;
+  }
+  #work-list div:nth-child(1) a{
+    margin-left: -6em;
+  }
+  #work-list div:nth-child(2) a{
+    margin-left:9em;
+
+  }
+  #work-list div:nth-child(3) a{
+    margin-left:18em;
+  }
+
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+  #books-cart, #my-resume, #memory-game {
+    float: left;
+    display: block;
+    height: 8em;
+    width: 8em;
+    cursor: pointer;
+  }
+}
