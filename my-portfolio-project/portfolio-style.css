@@ -25,7 +25,7 @@ body {
   margin-top: 30%;
 }
 
-#my-resume, #memory-game {
+#my-resume, #memory-game ,#recipe-box{
   display: block;
   height: 12em;
   width: 15em;
@@ -60,9 +60,8 @@ and (-webkit-min-device-pixel-ratio: 3.0) {
   }
 
   #my-resume {
-    float: none;
     margin-top: -4.5em;
-    margin-left: 7em;
+    margin-left: 5em;
     display: block;
     height: 3em;
     width: 3em;
@@ -70,8 +69,17 @@ and (-webkit-min-device-pixel-ratio: 3.0) {
   }
 
   #memory-game {
-    float: none;
-    margin-top: -6em;
+    margin-top: -4.5em;
+    margin-left: 10em;
+    display: block;
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    border: solid red 2px;
+
+  }
+  #recipe-box {
+    margin-top: -4.5em;
     margin-left: 15em;
     display: block;
     height: 3em;
@@ -92,6 +100,9 @@ and (-webkit-min-device-pixel-ratio: 3.0) {
   #work-list div:nth-child(3) a{
     margin-left:18em;
   }
+  #work-list div a{
+    font-size: 0em ;
+  }
 
 }
 
@@ -99,7 +110,7 @@ and (-webkit-min-device-pixel-ratio: 3.0) {
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
-  #books-cart, #my-resume, #memory-game {
+  #books-cart, #my-resume, #memory-game,#recipe-box {
     float: left;
     display: block;
     height: 8em;
